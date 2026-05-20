@@ -4,6 +4,7 @@ import Footer from './components/footer/footer'
 import CalcularTempo from './pages/CalcularTempo'
 import Home from './pages/Home'
 import { Sobre } from './pages/Sobre'
+import Acessibilidade from './pages/Acessibilidade'
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/calcular-tempo" element={<CalcularTempo />} />
             <Route path="/home" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
+            <Route path="/acessibilidades" element={<Acessibilidade />} />
           </Routes>
         </main>
         <Footer />
