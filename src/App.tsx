@@ -2,6 +2,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import CalcularTempo from './pages/CalcularTempo'
+import Home from './pages/Home'
+import { Sobre } from './pages/Sobre'
+
 
 export default function App() {
   return (
@@ -10,7 +13,10 @@ export default function App() {
         <Navbar />
         <main className="flex-1">
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/calcular-tempo" element={<CalcularTempo />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/sobre" element={<Sobre />} />
           </Routes>
         </main>
         <Footer />
