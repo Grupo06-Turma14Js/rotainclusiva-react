@@ -1,12 +1,12 @@
 import {
-  Target,
-  Eye,
-  Heart,
-  ShieldCheck,
-  Users,
-  Lightbulb,
-  Info,
-  Wheelchair,
+  TargetIcon,
+  EyeIcon,
+  HeartIcon,
+  ShieldCheckIcon,
+  UsersIcon,
+  LightbulbIcon,
+  InfoIcon,
+  WheelchairIcon,
 } from "@phosphor-icons/react";
 
 
@@ -45,11 +45,11 @@ export function Sobre() {
       {/* 1. HERO SECTION */}
       <section className="max-w-4xl mx-auto text-center px-4 pt-16 pb-20 sticky-0">
         <div className="inline-flex items-center gap-1.5 bg-blue-50 text-brand-primary text-xs font-semibold px-3 py-1.5 rounded-full border border-blue-100 mb-6 transition-transform duration-300 hover:scale-105 cursor-default">
-          <Info size={14} weight="fill" />
+          <InfoIcon size={14} weight="fill" />
           Sobre nós
         </div>
         <div className="ml-2 inline-flex items-center gap-2 bg-white/50 backdrop-blur-md border border-slate-200 px-3 py-1.5 rounded-full text-slate-700 text-xs font-normal tracking-wide mb-6 transition-transform duration-300 hover:scale-105 cursor-default">
-          <Wheelchair size={14} className="text-[#10B981]" weight="bold" />
+          <WheelchairIcon size={14} className="text-[#10B981]" weight="bold" />
           <span className="opacity-90">Mobilidade para todos</span>
         </div>
 
@@ -58,7 +58,7 @@ export function Sobre() {
           Transformando a mobilidade
           <br />
           {" "}
-          <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent inline-block mt-1">
+          <span className="bg-linear-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent inline-block mt-1">
             em uma experiência inclusiva.
           </span>
         </h1>
@@ -75,7 +75,7 @@ export function Sobre() {
         {/* Card Missão */}
         <div className="group bg-white p-8 md:p-10 rounded-3xl shadow-xs border border-slate-100/80 transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.01] hover:shadow-xl hover:border-blue-200/60">
           <div className="w-12 h-12 rounded-xl bg-blue-50 text-brand-primary flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:bg-blue-100">
-            <Target size={24} weight="bold" />
+            <TargetIcon size={24} weight="bold" />
           </div>
           <h2 className="text-xl font-bold text-brand-dark mb-4 transition-colors duration-300 group-hover:text-blue-600">
             Nossa Missão
@@ -91,7 +91,7 @@ export function Sobre() {
         {/* Card Visão */}
         <div className="group bg-white p-8 md:p-10 rounded-3xl shadow-xs border border-slate-100/80 transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.01] hover:shadow-xl hover:border-emerald-200/60">
           <div className="w-12 h-12 rounded-xl bg-emerald-50 text-brand-secondary flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-12 group-hover:bg-emerald-100">
-            <Eye size={24} weight="bold" />
+            <EyeIcon size={24} weight="bold" />
           </div>
           <h2 className="text-xl font-bold text-brand-dark mb-4 transition-colors duration-300 group-hover:text-emerald-600">
             Nossa Visão
@@ -106,7 +106,7 @@ export function Sobre() {
       </section>
 
       {/* Divider */}
-      <div className="w-full h-[1px] bg-linear-to-r from-transparent via-slate-200 to-transparent mb-20" />
+      <div className="w-full h-px bg-linear-to-r from-transparent via-slate-200 to-transparent mb-20" />
 
       {/* 3. NOSSOS VALORES */}
       <section className="max-w-7xl mx-auto px-4 mb-28">
@@ -118,7 +118,7 @@ export function Sobre() {
           {/* Inclusão */}
           <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-rose-200/50">
             <div className="w-10 h-10 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center mx-auto mb-4 transition-all duration-500 group-hover:scale-110 group-hover:bg-rose-100 group-hover:rotate-12">
-              <Heart size={20} weight="fill" />
+              <HeartIcon size={20} weight="fill" />
             </div>
             <h3 className="font-bold text-brand-dark mb-2 transition-colors duration-300 group-hover:text-rose-600">Inclusão</h3>
             <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
@@ -130,7 +130,7 @@ export function Sobre() {
           {/* Segurança */}
           <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-blue-200/50">
             <div className="w-10 h-10 rounded-full bg-blue-50 text-brand-primary flex items-center justify-center mx-auto mb-4 transition-all duration-500 group-hover:scale-110 group-hover:bg-blue-100 group-hover:-rotate-12">
-              <ShieldCheck size={20} weight="fill" />
+              <ShieldCheckIcon size={20} weight="fill" />
             </div>
             <h3 className="font-bold text-brand-dark mb-2 transition-colors duration-300 group-hover:text-blue-600">Segurança</h3>
             <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
@@ -142,7 +142,7 @@ export function Sobre() {
           {/* Comunidade */}
           <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-amber-200/50">
             <div className="w-10 h-10 rounded-full bg-amber-50 text-amber-500 flex items-center justify-center mx-auto mb-4 transition-all duration-500 group-hover:scale-110 group-hover:bg-amber-100 group-hover:rotate-12">
-              <Users size={20} weight="fill" />
+              <UsersIcon size={20} weight="fill" />
             </div>
             <h3 className="font-bold text-brand-dark mb-2 transition-colors duration-300 group-hover:text-amber-600">Comunidade</h3>
             <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
@@ -154,7 +154,7 @@ export function Sobre() {
           {/* Inovação */}
           <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-purple-200/50">
             <div className="w-10 h-10 rounded-full bg-purple-50 text-purple-500 flex items-center justify-center mx-auto mb-4 transition-all duration-500 group-hover:scale-110 group-hover:bg-purple-100 group-hover:-rotate-12">
-              <Lightbulb size={20} weight="fill" />
+              <LightbulbIcon size={20} weight="fill" />
             </div>
             <h3 className="font-bold text-brand-dark mb-2 transition-colors duration-300 group-hover:text-purple-600">Inovação</h3>
             <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
@@ -166,7 +166,7 @@ export function Sobre() {
       </section>
 
       {/* Divider */}
-      <div className="w-full h-[1px] bg-linear-to-r from-transparent via-slate-200 to-transparent mb-20" />
+      <div className="w-full h-px bg-linear-to-r from-transparent via-slate-200 to-transparent mb-20" />
 
       {/* 4. NOSSA EQUIPE */}
       <section className="max-w-7xl mx-auto px-4">

@@ -1,23 +1,23 @@
-import {Car, Wheelchair, Clock, ArrowRight,Sparkle,} from "@phosphor-icons/react";
+import {CarIcon, WheelchairIcon, ClockIcon, ArrowRightIcon,SparkleIcon,} from "@phosphor-icons/react";
 import bgImage from "../assets/background.jpg";
 
 export default function Home() {
   // Dados dos cards da seção "O que oferecemos"
   const features = [
     {
-      icon: <Car size={28} weight="duotone" />,
+      icon: <CarIcon size={28} weight="duotone" />,
       title: "Caronas Inclusivas",
       description:
         "Motoristas e passageiros conectados em uma rede solidária com total suporte e veículos adaptados às suas necessidades específicas.",
     },
     {
-      icon: <Wheelchair size={28} weight="duotone" />,
+      icon: <WheelchairIcon size={28} weight="duotone" />,
       title: "Mapeamento de Acessibilidade",
       description:
         "Explore recursos, rampas, elevadores e calçadas adequadas em tempo real através do feedback ativo de nossa própria comunidade.",
     },
     {
-      icon: <Clock size={28} weight="duotone" />,
+      icon: <ClockIcon size={28} weight="duotone" />,
       title: "Tempo de Viagem Inteligente",
       description:
         "Algoritmos avançados que calculam trajetos preditivos baseados em modais acessíveis, evitando barreiras físicas urbanas.",
@@ -28,21 +28,23 @@ export default function Home() {
     
     <main className="animate-fadeIn bg-[#f4f6fb]">
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[100vh] md:min-h-[85vh] lg:min-h-screen flex items-center bg-[#1E293B] pt-20 overflow-hidden">
+      <div className="relative h-screen -mt-16">
+      <section className="relative min-h-screen md:min-h-[85vh] lg:min-h-screen flex items-center bg-[#1E293B] pt-20 overflow-hidden">
         {/* Imagem de Fundo Limpa */}
         <div
           className="absolute inset-0 bg-cover bg-center md:bg-right lg:bg-center bg-no-repeat z-0"
           style={{ backgroundImage: `url(${bgImage})` }}
         />
+        
 
         
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1E293B]/95 via-[#1E293B]/75 sm:via-[#1E293B]/60 to-[#1E293B]/30 md:to-transparent z-10" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#1E293B]/95 via-[#1E293B]/75 sm:via-[#1E293B]/60 to-[#1E293B]/30 md:to-transparent z-10" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-20 py-12 md:py-20">
           <div className="max-w-xl md:max-w-2xl lg:max-w-3xl text-left">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full text-white text-xs font-normal tracking-wide mb-6">
-              <Wheelchair size={14} className="text-[#10B981]" weight="bold" />
+              <WheelchairIcon size={14} className="text-[#10B981]" weight="bold" />
               <span className="opacity-90">Mobilidade para todos</span>
             </div>
 
@@ -64,11 +66,11 @@ export default function Home() {
             {/* Botões */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <button className="flex items-center justify-center gap-2 bg-[#2563EB] text-white px-6 py-3.5 rounded-xl font-medium shadow-lg shadow-blue-600/20 hover:bg-blue-700 hover:scale-[1.01] transition-all cursor-pointer">
-                <Car size={18} weight="bold" />
+                <CarIcon size={18} weight="bold" />
                 Ver Caronas
               </button>
               <button className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md text-white border border-white/20 px-6 py-3.5 rounded-xl font-medium hover:bg-white/20 hover:scale-[1.01] transition-all cursor-pointer">
-                <Wheelchair size={18} weight="bold" />
+                <WheelchairIcon size={18} weight="bold" />
                 Recursos de Acessibilidade
               </button>
             </div>
@@ -92,7 +94,7 @@ export default function Home() {
           </svg>
         </div>
       </section>
-
+    </div>
       {/*2. SEÇÃO "O QUE OFERECEMOS" */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -125,7 +127,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 text-sm font-semibold text-[#2563EB] hover:text-blue-700 transition-colors"
               >
                 Saiba mais
-                <ArrowRight
+                <ArrowRightIcon
                   size={16}
                   className="group-hover:translate-x-1 transition-transform"
                 />
@@ -136,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* 3. SEÇÃO DE ESTATÍSTICAS */}
-      <section className="bg-gradient-to-r from-[#2563EB] to-blue-700 py-16 shadow-inner">
+      <section className="bg-linear-to-r from-[#2563EB] to-blue-700 py-16 shadow-inner">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
             <div className="text-center p-4">
@@ -180,13 +182,13 @@ export default function Home() {
 
       {/* 4. CTA SECTION */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 rounded-3xl p-8 md:p-16 text-center max-w-4xl mx-auto shadow-sm relative overflow-hidden">
+        <div className="bg-linear-to-br from-emerald-50 to-teal-50 border border-emerald-100 rounded-3xl p-8 md:p-16 text-center max-w-4xl mx-auto shadow-sm relative overflow-hidden">
           {/* Brilho sutil no fundo */}
           <div className="absolute top-0 left-0 w-32 h-32 bg-emerald-200/20 rounded-full blur-3xl" />
 
           <div className="relative z-10">
             <div className="w-12 h-12 bg-[#10B981]/10 text-[#10B981] rounded-xl flex items-center justify-center mx-auto mb-6">
-              <Sparkle size={24} weight="fill" />
+              <SparkleIcon size={24} weight="fill" />
             </div>
 
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E293B] tracking-tight mb-4">
