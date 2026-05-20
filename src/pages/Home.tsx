@@ -94,6 +94,7 @@ export default function Home() {
           </svg>
         </div>
       </section>
+      
     </div>
       {/*2. SEÇÃO "O QUE OFERECEMOS" */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
