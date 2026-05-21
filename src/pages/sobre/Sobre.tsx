@@ -73,7 +73,7 @@ export function Sobre() {
       {/* 2. MISSÃO & VISÃO */}
       <section className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 mb-24">
         {/* Card Missão */}
-        <div className="group bg-white p-8 md:p-10 rounded-3xl shadow-xs border border-slate-100/80 transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.01] hover:shadow-xl hover:border-blue-200/60">
+        <div className="group bg-white p-8 md:p-10 rounded-3xl shadow-xs border border-slate-100/80 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl hover:border-blue-200/60">
           <div className="w-12 h-12 rounded-xl bg-blue-50 text-brand-primary flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:bg-blue-100">
             <TargetIcon size={24} weight="bold" />
           </div>
@@ -89,7 +89,7 @@ export function Sobre() {
         </div>
 
         {/* Card Visão */}
-        <div className="group bg-white p-8 md:p-10 rounded-3xl shadow-xs border border-slate-100/80 transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.01] hover:shadow-xl hover:border-emerald-200/60">
+        <div className="group bg-white p-8 md:p-10 rounded-3xl shadow-xs border border-slate-100/80 transition-all duration-500 ease-out hover:-translate-y-1.5over:scale-[1.01] hover:shadow-xl hover:border-emerald-200/60">
           <div className="w-12 h-12 rounded-xl bg-emerald-50 text-brand-secondary flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-12 group-hover:bg-emerald-100">
             <EyeIcon size={24} weight="bold" />
           </div>
@@ -116,7 +116,7 @@ export function Sobre() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Inclusão */}
-          <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-rose-200/50">
+          <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-xl hover:border-rose-200/50">
             <div className="w-10 h-10 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center mx-auto mb-4 transition-all duration-500 group-hover:scale-110 group-hover:bg-rose-100 group-hover:rotate-12">
               <HeartIcon size={20} weight="fill" />
             </div>
@@ -128,7 +128,7 @@ export function Sobre() {
           </div>
 
           {/* Segurança */}
-          <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-blue-200/50">
+          <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-xl hover:border-blue-200/50">
             <div className="w-10 h-10 rounded-full bg-blue-50 text-brand-primary flex items-center justify-center mx-auto mb-4 transition-all duration-500 group-hover:scale-110 group-hover:bg-blue-100 group-hover:-rotate-12">
               <ShieldCheckIcon size={20} weight="fill" />
             </div>
@@ -140,7 +140,7 @@ export function Sobre() {
           </div>
 
           {/* Comunidade */}
-          <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-amber-200/50">
+          <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-xl hover:border-amber-200/50">
             <div className="w-10 h-10 rounded-full bg-amber-50 text-amber-500 flex items-center justify-center mx-auto mb-4 transition-all duration-500 group-hover:scale-110 group-hover:bg-amber-100 group-hover:rotate-12">
               <UsersIcon size={20} weight="fill" />
             </div>
@@ -152,7 +152,7 @@ export function Sobre() {
           </div>
 
           {/* Inovação */}
-          <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-purple-200/50">
+          <div className="group bg-white p-6 rounded-2xl border border-slate-100 text-center transition-all duration-500 ease-out hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-xl hover:border-purple-200/50">
             <div className="w-10 h-10 rounded-full bg-purple-50 text-purple-500 flex items-center justify-center mx-auto mb-4 transition-all duration-500 group-hover:scale-110 group-hover:bg-purple-100 group-hover:-rotate-12">
               <LightbulbIcon size={20} weight="fill" />
             </div>
@@ -178,7 +178,7 @@ export function Sobre() {
           {team.map((member, index) => (
             <div
               key={index}
-              className="group bg-white p-6 rounded-2xl border border-slate-100 flex flex-col items-center text-center shadow-xs transition-all duration-500 ease-out hover:translate-y-[-6px] hover:scale-[1.02] hover:shadow-xl hover:border-blue-100"
+              className="group bg-white p-6 rounded-2xl border border-slate-100 flex flex-col items-center text-center shadow-xs transition-all duration-500 ease-out hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-xl hover:border-blue-100"
             >
               <div className="w-24 h-24 rounded-full bg-slate-50 mb-4 overflow-hidden border-2 border-slate-100 p-1 transition-colors duration-500 group-hover:border-blue-400">
                 <img

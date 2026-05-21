@@ -1,5 +1,5 @@
 import {CarIcon, WheelchairIcon, ClockIcon, ArrowRightIcon,SparkleIcon,} from "@phosphor-icons/react";
-import bgImage from "../assets/background.jpg";
+
 
 export default function Home() {
   // Dados dos cards da seção "O que oferecemos"
@@ -33,7 +33,7 @@ export default function Home() {
         {/* Imagem de Fundo Limpa */}
         <div
           className="absolute inset-0 bg-cover bg-center md:bg-right lg:bg-center bg-no-repeat z-0"
-          style={{ backgroundImage: `url(${bgImage})` }}
+          style={{ backgroundImage: `url(${Image})` }}
         />
         
 

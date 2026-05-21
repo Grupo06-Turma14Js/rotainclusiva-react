@@ -51,3 +51,55 @@ export async function deleteAcessibilidade(id: number) {
     throw new Error("Erro ao deletar acessibilidade");
   }
 }
+
+export async function getCaronas() {
+  const response = await fetch(`${API_URL}/caronas`);
+
+  if (!response.ok) {
+    throw new Error("Erro ao buscar caronas");
+  }
+
+  return response.json();
+}
+
+export async function createCarona(data: any) {
+  const response = await fetch(`${API_URL}/caronas`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    throw new Error("Erro ao criar carona");
+  }
+
+  return response.json();
+}
+
+export async function updateCarona(id: number, data: any) {
+  const response = await fetch(`${API_URL}/caronas/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    throw new Error("Erro ao atualizar carona");
+  }
+
+  return response.json();
+}
+
+export async function deleteCarona(id: number) {
+  const response = await fetch(`${API_URL}/caronas/${id}`, {
+    method: "DELETE",
+  });
+
+  if (!response.ok) {
+    throw new Error("Erro ao deletar carona");
+  }
+}

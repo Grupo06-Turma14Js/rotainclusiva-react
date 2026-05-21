@@ -5,7 +5,7 @@ import { List, X } from "@phosphor-icons/react";
 const navLinks = [
     { label: "Home", to: "/" },
     { label: "Caronas", to: "/caronas" },
-    { label: "Acessibilidades", to: "/acessibilidades" },
+    { label: "Acessibilidades", to: "/acessibilidade" },
     { label: "Calcular Tempo", to: "/calcular-tempo" },
     { label: "Sobre", to: "/sobre" },
 ];

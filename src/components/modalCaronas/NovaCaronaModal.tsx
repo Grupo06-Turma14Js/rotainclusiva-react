@@ -1,24 +1,24 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 import {
   X,
   MapPin,
   Ruler,
   Timer,
-} from '@phosphor-icons/react';
+} from '@phosphor-icons/react'
 
 interface NovaCaronaModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  onSalvar: (dados: any) => void;
+  isOpen: boolean
+  onClose: () => void
+  onSalvar: (dados: any) => void
 }
 
 interface FormData {
-  origem: string;
-  destino: string;
-  distancia: number;
-  velocidade: number;
-  acessibilidadeId: number;
+  origem: string
+  destino: string
+  distancia: number
+  velocidade: number
+  acessibilidadeId: number
 }
 
 const camposIniciais: FormData = {
@@ -27,7 +27,7 @@ const camposIniciais: FormData = {
   distancia: 0,
   velocidade: 0,
   acessibilidadeId: 1,
-};
+}
 
 export default function NovaCaronaModal({
   isOpen,
@@ -36,15 +36,15 @@ export default function NovaCaronaModal({
 }: NovaCaronaModalProps) {
 
   const [form, setForm] =
-    useState<FormData>(camposIniciais);
+    useState<FormData>(camposIniciais)
 
-  if (!isOpen) return null;
+  if (!isOpen) return null
 
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement>
   ) {
 
-    const { name, value } = e.target;
+    const { name, value } = e.target
 
     setForm((prev) => ({
       ...prev,
@@ -55,14 +55,14 @@ export default function NovaCaronaModal({
         name === 'acessibilidadeId'
           ? Number(value)
           : value,
-    }));
+    }))
   }
 
   function handleSubmit(
     e: React.FormEvent<HTMLFormElement>
   ) {
 
-    e.preventDefault();
+    e.preventDefault()
 
     const novaCarona = {
       origem: form.origem,
@@ -79,13 +79,15 @@ export default function NovaCaronaModal({
       usuario: {
         id: 1,
       },
-    };
+    } 
 
-    onSalvar(novaCarona);
+    console.log('Dados enviados:', novaCarona)
 
-    setForm(camposIniciais);
+    onSalvar(novaCarona)
 
-    onClose();
+    setForm(camposIniciais)
+
+    onClose()
   }
 
   return (
@@ -266,5 +268,5 @@ export default function NovaCaronaModal({
         </form>
       </div>
     </div>
-  );
+  )
 }

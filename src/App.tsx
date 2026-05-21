@@ -1,36 +1,27 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
-import CalcularTempo from './pages/CalcularTempo'
-import { ToastContainer } from 'react-toastify';
+import Caronas from './pages/Caronas/Caronas'
+import CalcularTempo from './pages/calculartempo/CalcularTempo'
+import Home from './pages/home/Home'
+import { Sobre } from './pages/sobre/Sobre'
+import Acessibilidade from './pages/acessibilidade/Acessibilidade'
 
 export default function App() {
   return (
     <BrowserRouter>
+      <Navbar />
 
-      <div className="flex flex-col min-h-screen bg-[#F8FAFC]">
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/sobre' element={<Sobre />} />
+        <Route path='/caronas' element={<Caronas />} />
+        <Route path='/calcular-tempo' element={<CalcularTempo />} />
+        <Route path='/acessibilidade' element={<Acessibilidade />} />
+      </Routes>
 
-        {/* Navbar */}
-        <Navbar />
-
-        {/* Conteúdo */}
-        <main className="flex-1">
-
-          <Routes>
-            <Route path="/calcular-tempo" element={<CalcularTempo />} />
-          </Routes>
-        </main>
-
-        {/* Footer */}
-        <Footer />
-
-        {/* Toasts */}
-        <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          theme="light"
-        />
-      </div>
+      <Footer />
     </BrowserRouter>
-  );
+  )
 }

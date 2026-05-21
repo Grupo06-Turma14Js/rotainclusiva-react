@@ -5,7 +5,7 @@ import {
   createAcessibilidade,
   updateAcessibilidade,
   deleteAcessibilidade,
-} from "../services/Api";
+} from "../../services/Api";
 
 interface Acessibilidade {
   id: number;
@@ -183,15 +183,15 @@ export default function Acessibilidade() {
       </div>
 
       <div className="mb-10 rounded-2xl overflow-hidden shadow-lg">
-  <video
-    autoPlay
-    playsInline
-    className="w-full"
-  >
-    <source src="/amostra.mp4" type="video/mp4" />
-    Seu navegador não suporta vídeo.
-  </video>
-</div>
+        <video
+          autoPlay
+          playsInline
+          className="w-full"
+        >
+          <source src="/amostra.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
 
       {/* GRID */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -389,7 +389,7 @@ export default function Acessibilidade() {
               bg-white
               rounded-2xl
               p-8
-              w-[420px]
+              w-105
               max-w-[90vw]
               shadow-xl
               border
