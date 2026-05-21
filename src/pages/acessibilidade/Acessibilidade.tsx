@@ -143,11 +143,11 @@ export default function Acessibilidade() {
       {/* HEADER */}
       <div className="flex items-center justify-between mb-10">
         <div>
-          <h1 className="text-5xl font-bold text-[#14213D]">
+          <h1 className="text-2xl font-bold text-[#14213D]">
             Recursos de Acessibilidade
           </h1>
 
-          <p className="text-[#64748B] mt-2 text-lg">
+          <p className="text-[#64748B] mt-2 text-sm">
             Descubra e gerencie recursos acessíveis disponíveis na sua cidade.
           </p>
         </div>
@@ -188,6 +188,7 @@ export default function Acessibilidade() {
               font-semibold
               shadow-sm
               transition
+              text-sm
             "
           >
             + Nova Acessibilidade
@@ -313,12 +314,12 @@ export default function Acessibilidade() {
             </span>
 
             {/* TÍTULO */}
-            <h2 className="text-[30px] font-bold text-[#0F172A] mb-4 leading-tight">
+            <h2 className="text-2x1 font-bold text-[#0F172A] mb-4 leading-tight">
               {item.tipo}
             </h2>
 
             {/* DESCRIÇÃO FIXA */}
-            <p className="text-[#64748B] leading-8 text-lg mb-8">
+            <p className="text-[#64748B] leading-8 text-sm mb-8">
               Recurso de acessibilidade cadastrado no sistema para melhorar a
               mobilidade e inclusão urbana.
             </p>
@@ -348,16 +349,10 @@ export default function Acessibilidade() {
                   </div>
                 ))
               ) : (
-                <div className="text-[#94A3B8]">
+                <div className="text-[#000000], font-semibold text-sm">
                   Nenhuma carona vinculada
                 </div>
               )}
-            </div>
-
-            {/* LOCATION */}
-            <div className="flex items-center gap-2 text-[#94A3B8] text-base">
-              <span>📍</span>
-              <span>São Paulo - Capital</span>
             </div>
           </div>
         ))}
