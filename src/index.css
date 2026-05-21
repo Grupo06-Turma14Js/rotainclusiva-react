@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+ 
+:root {
+  --font-poppins: 'Poppins', 'Inter', sans-serif;
+  --font-pacifico: 'Pacifico', cursive;
+ 
+  --color-primary: #2563EB;
+  --color-primary-hover: #1d4ed8;
+  --color-secondary: #10B981;
+  --color-bg: #F8FAFC;
+  --color-dark: #1E293B;
+  --color-card: #ffffff;
+  --color-muted: #64748B;
+  --color-border: #E2E8F0;
+  --color-danger: #EF4444;
+}
+ 
+* {
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+ 
+body {
+  background-color: #F8FAFC;
+  color: #1E293B;
+}
+ 
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
