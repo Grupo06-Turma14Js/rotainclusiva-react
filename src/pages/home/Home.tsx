@@ -1,5 +1,5 @@
 import {CarIcon, WheelchairIcon, ClockIcon, ArrowRightIcon,SparkleIcon,} from "@phosphor-icons/react";
-
+import Image from "../../assets/background.jpg";
 
 export default function Home() {
   // Dados dos cards da seção "O que oferecemos"
