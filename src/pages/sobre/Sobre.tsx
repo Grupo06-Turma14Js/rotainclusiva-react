@@ -16,13 +16,13 @@ const team = [
   {
     name: "Kaio Morais",
     role: "Desenvolvedor",
-    bio: "Apaixonado por tecnologia e inclusão social. Transformo ideias em experiências digitais com propósito, acessibilidade e inovação.",
+    bio: "Apaixonado por tecnologia e inclusão social. Transformo ideias em experiências digitais.",
     avatar: "src/assets/Kaio_4.jpg",
   },
   {
     name: "Isabela Siqueira",
     role: "Desenvolvadora",
-    bio: "Desenvolvedora frontend apaixonada por interfaces modernas e experiências acessíveis. Une design, tecnologia e propósito em cada projeto.",
+    bio: "Desenvolvedora frontend apaixonada por interfaces modernas, une design e tecnologia.",
     avatar: "src/assets/Isabela_5.jpg",
   },
   {
@@ -34,7 +34,7 @@ const team = [
   {
     name: "Alice Tolosa",
     role: "Desenvolvadora",
-    bio: "Desenvolvedora fullstack especializada na criação de aplicações modernas e acessíveis, combinando tecnologia, inovação e usabilidade para entregar experiências digitais com impacto real.",
+    bio: "Desenvolvedora focada em criar soluções,transformando tecnologia em experiências com impacto real.",
     avatar: "src/assets/Alice.jpg",
   },
 ];
