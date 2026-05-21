@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import TutorialCard from "../../components/tutorialCard/TutorialCard";
+
 import {
   getAcessibilidades,
   createAcessibilidade,
@@ -7,10 +9,21 @@ import {
   deleteAcessibilidade,
 } from "../../services/Api";
 
+// 1. Interface de Carona adicionada para tipar corretamente os objetos
+interface Carona {
+  id: number;
+  origem: string;
+  destino: string;
+  distancia: string | number;
+  velocidade: string | number;
+  data: string;
+}
+
+// 2. Interface Acessibilidade atualizada
 interface Acessibilidade {
   id: number;
   tipo: string;
-  carona: string[];
+  carona: Carona[]; 
 }
 
 export default function Acessibilidade() {
@@ -182,16 +195,8 @@ export default function Acessibilidade() {
         </div>
       </div>
 
-      <div className="mb-10 rounded-2xl overflow-hidden shadow-lg">
-        <video
-          autoPlay
-          playsInline
-          className="w-full"
-        >
-          <source src="/amostra.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
-        </video>
-      </div>
+      {/* TUTORIAL */}
+      <TutorialCard />
 
       {/* GRID */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -318,12 +323,12 @@ export default function Acessibilidade() {
               mobilidade e inclusão urbana.
             </p>
 
-            {/* CARONAS */}
+            {/* 3. CARONAS CORRIGIDAS */}
             <div className="space-y-3 mb-6">
               {item.carona.length > 0 ? (
-                item.carona.map((carona, index) => (
+                item.carona.map((carona) => (
                   <div
-                    key={index}
+                    key={carona.id}
                     className="
                       bg-[#F8FAFC]
                       border
@@ -334,18 +339,24 @@ export default function Acessibilidade() {
                       text-[#334155]
                     "
                   >
-                    🚗 {carona}
+                    <div className="font-semibold text-sm text-[#14213D]">
+                      🚗 {carona.origem} ➔ {carona.destino}
+                    </div>
+                    <div className="text-xs text-[#64748B] mt-1">
+                      Distância: {carona.distancia} | Velocidade: {carona.velocidade} | Data: {carona.data}
+                    </div>
                   </div>
                 ))
               ) : (
-                <div className="text-[#94A3B8]">Nenhuma carona vinculada</div>
+                <div className="text-[#94A3B8]">
+                  Nenhuma carona vinculada
+                </div>
               )}
             </div>
 
             {/* LOCATION */}
             <div className="flex items-center gap-2 text-[#94A3B8] text-base">
               <span>📍</span>
-
               <span>São Paulo - Capital</span>
             </div>
           </div>
@@ -450,14 +461,14 @@ export default function Acessibilidade() {
                 onClick={saveModal}
                 className="
                   bg-blue-600
-              hover:bg-blue-700
-              text-white
-              px-6
-              py-4
-              rounded-2xl
-              font-semibold
-              shadow-sm
-              transition
+                  hover:bg-blue-700
+                  text-white
+                  px-6
+                  py-4
+                  rounded-2xl
+                  font-semibold
+                  shadow-sm
+                  transition
                 "
               >
                 Salvar
