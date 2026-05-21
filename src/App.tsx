@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import CalcularTempo from './pages/CalcularTempo'
+import { ToastContainer } from 'react-toastify';
 
 export default function App() {
   return (
