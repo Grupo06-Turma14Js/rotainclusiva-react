@@ -16,7 +16,7 @@ const team = [
   {
     name: "Kaio Morais",
     role: "Desenvolvedor",
-    bio: "Apaixonado por tecnologia e inclusão social. Trabalha para tornar a mobilidade urbana acessível a todos.",
+    bio: "Apaixonado por tecnologia e inclusão social. Transformo ideias em experiências digitais com propósito, acessibilidade e inovação.",
     avatar: "src/assets/Kaio_4.jpg",
   },
   {
@@ -28,13 +28,13 @@ const team = [
   {
     name: "Marlon Panerari",
     role: "Desenvolvedor",
-    bio: "Desenvolvedor de software com interesse em aplicações inteligentes e colaborativas. Atuo na construção de soluções escaláveis e inclusivas",
+    bio: "Desenvolvedor de software com interesse em aplicações inteligentes e colaborativas.",
     avatar: "src/assets/Marlon_Panerari_4.jpg",
   },
   {
     name: "Alice Tolosa",
     role: "Desenvolvadora",
-    bio: "Gestora de comunidades inclusivas. Coordena parcerias e operações com foco no impacto social.",
+    bio: "Desenvolvedora fullstack especializada na criação de aplicações modernas e acessíveis, combinando tecnologia, inovação e usabilidade para entregar experiências digitais com impacto real.",
     avatar: "src/assets/Alice.jpg",
   },
 ];
