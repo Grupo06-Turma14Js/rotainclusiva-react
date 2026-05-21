@@ -1,6 +1,8 @@
-@import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+@import "tailwindcss";
  
 :root {
   --font-poppins: 'Poppins', 'Inter', sans-serif;
@@ -17,9 +19,7 @@
   --color-danger: #EF4444;
 }
  
-* {
-  font-family: 'Poppins', 'Inter', sans-serif;
-}
+
  
 body {
   background-color: #F8FAFC;

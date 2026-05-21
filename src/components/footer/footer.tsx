@@ -13,14 +13,12 @@ const navLinks = [
     { label: "Home", to: "/" },
     { label: "Caronas", to: "/caronas" },
     { label: "Acessibilidades", to: "/acessibilidades" },
-    { label: "Calcular Tempo", to: "/calcular-tempo" },
     { label: "Sobre", to: "/sobre" },
 ];
 
 const resourceLinks = [
     { label: "Encontrar Caronas", to: "/caronas" },
     { label: "Mapa de Acessibilidade", to: "/acessibilidades/mapa" },
-    { label: "Calcular Rota", to: "/calcular-tempo" },
 ];
 
 const socialLinks = [

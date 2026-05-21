@@ -1,5 +1,14 @@
 const API_URL = "https://rotainclusiva.onrender.com";
 
+export async function calcularTempoCarona(id: number) {
+  const response = await fetch(`${API_URL}/caronas/${id}/calcular-tempo`);
+
+  if (!response.ok) {
+    throw new Error("Erro ao calcular tempo da carona");
+  }
+
+  return response.json();
+}
 export async function getAcessibilidades() {
   const response = await fetch(`${API_URL}/acessibilidades`);
 

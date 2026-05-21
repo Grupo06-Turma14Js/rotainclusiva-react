@@ -6,7 +6,7 @@ const navLinks = [
     { label: "Home", to: "/" },
     { label: "Caronas", to: "/caronas" },
     { label: "Acessibilidades", to: "/acessibilidade" },
-    { label: "Calcular Tempo", to: "/calcular-tempo" },
+
     { label: "Sobre", to: "/sobre" },
 ];
 
