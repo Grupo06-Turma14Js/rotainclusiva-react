@@ -143,7 +143,8 @@ export default function Acessibilidade() {
       {/* HEADER */}
       <div className="flex items-center justify-between mb-10">
         <div>
-          <h1 className="text-2xl font-bold text-[#14213D]">
+          <h1 className="text-2xl font-bold text-[#14213D]">     
+
             Recursos de Acessibilidade
           </h1>
 

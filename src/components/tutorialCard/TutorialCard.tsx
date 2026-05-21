@@ -8,30 +8,26 @@ export default function TutorialCard() {
         {/* Texto */}
         <div className="flex-1 space-y-4">
 
-          <span className="inline-block text-xs font-medium text-[#2563EB] bg-[#EFF6FF] px-3 py-1 rounded-full">
+          <span className="inline-block text-2xl font-medium text-[#2563EB] bg-[#EFF6FF] px-3 py-1 rounded-full">
             Tutorial
           </span>
 
-          <h2 className="text-xl font-bold text-[#1E293B] leading-snug">
+          <h2 className="text-4xl font-bold text-[#1E293B] leading-snug">
             Como cadastrar recursos de acessibilidade
           </h2>
 
-          <p className="text-sm text-[#64748B] leading-relaxed">
+          <p className="text-2xl text-[#64748B] leading-relaxed">
             Assista ao vídeo e aprenda passo a passo como adicionar e gerenciar
             recursos acessíveis no Rota Inclusiva.
           </p>
 
-          <button className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-sm font-medium rounded-xl transition-colors">
-            <PlayCircle size={18} weight="fill" />
-
-            Assistir vídeo
-          </button>
         </div>
 
         {/* Vídeo */}
         <div className="w-full md:w-105 rounded-2xl overflow-hidden shadow-md">
           <video
-            controls
+            autoPlay
+            playsInline
             className="w-full h-full object-cover"
           >
             <source src="/amostra.mp4" type="video/mp4" />
