@@ -1,4 +1,9 @@
-const API_URL = "https://rotainclusiva.onrender.com";
+import axios from "axios";
+
+const API_URL = import.meta.env.VITE_API_URL;
+export const api = axios.create({
+  baseURL: API_URL,
+})
 
 export async function calcularTempoCarona(id: number) {
   const response = await fetch(`${API_URL}/caronas/${id}/calcular-tempo`);
