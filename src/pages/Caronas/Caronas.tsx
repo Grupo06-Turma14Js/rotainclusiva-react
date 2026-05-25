@@ -23,6 +23,7 @@ interface Carona {
 
   acessibilidade?: {
     id: number
+    tipo: "cadeirante" | "deficiencia-visual" | "deficiencia-auditiva" | "deficiencia-motora" | "deficiencia-cognitiva"
   }
 
   usuario?: {

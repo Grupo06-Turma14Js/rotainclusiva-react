@@ -16,6 +16,7 @@ interface CaronaCardProps {
   carona: Carona;
   onEditar: (carona: Carona) => void;
   onExcluir: (carona: Carona) => void;
+  onCalcularTempo: (id: number) => void;
 }
 
 // ── Banner por palavra-chave ──
